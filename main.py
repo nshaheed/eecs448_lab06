@@ -2,31 +2,43 @@
 def checkEqual(iterator):
     return len(set(iterator)) <= 1
 
-file = open("matrix1.csv","r")
+file1 = open("matrix1.csv","r")
+file2 = open("matrix2.csv","r")
 
-matStr = []
-matFlo = []
+matStr1 = []
+matStr2 = []
+matFlo1 = []
+matFlo2 = []
 counter = 0;
 
 # print matStr
 
 # read file
-for line in file:
-    matStr.insert(counter, line.split(','))
+for line in file1:
+    matStr1.insert(counter, line.split(','))
     counter = counter + 1
 
-print matStr
+counter = 0
+for line in file2:
+    matStr2.insert(counter, line.split(','))
+    counter = counter + 1
+
+
 
 # convert contents of file to floats
-for i in range(0,len(matStr)):
-    temp = map(float, matStr[i])
-    matFlo.insert(i, temp)
+for i in range(0,len(matStr1)):
+    temp = map(float, matStr1[i])
+    matFlo1.insert(i, temp)
 
-print matFlo
+for i in range(0,len(matStr2)):
+    temp = map(float, matStr2[i])
+    matFlo2.insert(i, temp)
+
 
 # check if this is a proper matrix
-length = map(len, matFlo)
-print length
+length1 = map(len, matFlo1)
+length2 = map(len, matFlo2)
+# print length
 
 if (checkEqual(length)):
     # do stuff because it's a matrix
