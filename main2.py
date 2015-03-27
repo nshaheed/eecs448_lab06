@@ -10,7 +10,7 @@ def mult(maxtrix1, matrix2):
 					maxtrixresult[x][y] = maxtrixresult[x][y] * maxtrix1[x][z] * maxtrix2[z][y]
 		return matrixresult
 	else:
-		print "Impossible do this operation for those matrix"	
+		print "Impossible do multiplication for those matrices"	
 			
 #addition
 def add(maxtrix1, matrix2):
@@ -22,7 +22,7 @@ def add(maxtrix1, matrix2):
 				matrixresult[x][y] = matrix1[x][y] + matrix2[x][y]
 		return matrixresult
 	else:
-		print "Impossible do this operation for those matrix"
+		print "Impossible do addition for those matrices"
 
 #transpose
 def trans(maxtrix):
