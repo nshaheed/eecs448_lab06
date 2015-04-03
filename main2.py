@@ -39,8 +39,8 @@ Matrix2 = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 Matrix3 = [[1,2,3],[4,5,6],[7,8,9]]
 Matrix4 = [[1,2,3],[4,5,6]]
 
-print mult(Matrix1, Matrix2)
+# print mult(Matrix1, Matrix2)
 
-print add(Matrix3, Matrix3)
+# print add(Matrix3, Matrix3)
 
-print trans(Matrix4)
+# print trans(Matrix4)
